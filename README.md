@@ -8,7 +8,7 @@ Full-stack project management app with React, Node, Express, and Postgres.
 - `frontend` - React + Vite frontend with route guards and role-aware screens.
 
 
-#DESCRIPTION:
+## DESCRIPTION:
 A web app to manage projects, assign tasks, and track progress with role-based access (Admin & Member).
 
 FEATURES:
@@ -19,7 +19,7 @@ Task Management (Create, assign, update status)
 Dashboard (Admin: all tasks, Member: personal tasks)
 Role-Based Access Control (RBAC)
 
-##ROLES:
+## ROLES:
 
 - `ADMIN` can create projects, manage project members, and create/update/delete tasks.
 - `MEMBER` can view assigned/member projects and update task status for tasks assigned to them.
@@ -39,7 +39,7 @@ View & update own tasks
 Mark tasks (To Do → In Progress → Done)
 View personal dashboard
 
-#TECH STACK:
+## TECH STACK:
 
 Backend: Node.js, Express, Sequelize
 Database: PostgreSQL / MongoDB
@@ -62,7 +62,7 @@ GET /projects
 POST /tasks
 PUT /tasks/
 
-SETUP:
+## SETUP:
 
 Clone repo
 Install dependencies (npm install)
