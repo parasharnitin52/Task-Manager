@@ -7,7 +7,13 @@ const sequelizeOptions = {
   define: {
     underscored: true,
     timestamps: true
-  }
+  },
+  dialectOptions: env.databaseUrl || env.nodeEnv === 'production' ? {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
+  } : {}
 };
 
 export const sequelize = env.databaseUrl
